@@ -9,9 +9,10 @@
     <h1>TRABALHANDO COM FORMULARIO E INPUT</h1>
 
     <h2>1 INPUTS BASICOS</h2>
+
     <label>NOME: </label>
-    <input type="text" placeholder="DIGITE SEU NOME">
-    <button>MOSTRAR NOME</button>
+    <input id="inputNome" type="text" placeholder="DIGITE SEU NOME">
+    <button  onclick="mostrarnome()">MOSTRAR NOME</button>
 
     <br>
 
@@ -25,7 +26,7 @@
     <input type="email">
     <button>MOSTRAR E-MAIL</button>
 
-    <div>
+    <div id="resultado1">
         <p>OS RESULTADOS APARECERÃO AQUI</p>
     </div>
 
@@ -73,5 +74,19 @@
     <br>
     <input type="radio" value="outros">
     <label>OUTROS</label>
+
+    <br>
+
+    <label>COMENTARIOS</label>
+    <br>
+    <textarea maxlength="20"></textarea>
+    <br>
+    <button>MOSTRAR COMENTARIOS</button>
+
+    <div>
+        <p>RESULTADOS DO SELECT, RADIO E TEXTAREA</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
