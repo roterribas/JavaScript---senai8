@@ -14,17 +14,17 @@
     <input id="inputNome" type="text" placeholder="DIGITE SEU NOME">
     <button  onclick="mostrarnome()">MOSTRAR NOME</button>
 
-    <br>
+    <br><br>
 
     <label>IDADE:</label>
-    <input type="namber" max="120" min="1">
-    <button>MOSTRAR IDADE</button>
+    <input id="inputIdade" type="number" max="120" min="1">
+    <button onclick="mostrarIdade()">MOSTRAR IDADE</button>
 
-    <br>
+    <br><br>
 
     <label>EMAIL:</label>
-    <input type="email">
-    <button>MOSTRAR E-MAIL</button>
+    <input id="inputEmail" type="email">
+    <button onclick="mostrarEmail()">MOSTRAR E-MAIL</button>
 
     <div id="resultado1">
         <p>OS RESULTADOS APARECERÃO AQUI</p>
@@ -35,19 +35,20 @@
     <h2>2 DIFERENTES TIPOS DE INPUT</h2>
 
     <label>DATA DE NASCIMENTO:</label>
-    <button>MOSTRAR DATA DE NASCIMENTO</button>
+    <input id="inputData" type="date">
+    <button onclick="mostrarData()">MOSTRAR DATA DE NASCIMENTO</button>
 
-    <br>
+    <br><br>
 
     <label>COR FAVORITA</label>
-    <input type="color">
-    <button>MOSTRAR COR</button>
+    <input id="inputCor" type="color">
+    <button onclick="mostrarCor()">MOSTRAR COR</button>
 
-    <br>
+    <br><br>
 
     <label>ACEITAR OS TERMOS</label>
-    <input type="checkbox">
-    <button>VERIFICAR</button>
+    <input id="inputCheckbox" type="checkbox">
+    <button onclick="verificarCheckbox()">VERIFICAR</button>
 
     <hr>
 
@@ -63,19 +64,22 @@
     </select>
     <button>MOSTRAR ESTADO</button>
 
-    <br>
+    <br><br>
+
     <label>GÊNERO</label>
     <br>
-    <input type="radio" value="masculino">
+    <input type="radio" value="masculino" name="genero">
     <label>MASCULINO</label>
     <br>
-    <input type="radio" value="feminino">
+    <input type="radio" value="feminino" name="genero">
     <label>FEMININO</label>
     <br>
-    <input type="radio" value="outros">
+    <input type="radio" value="outros" name="genero">
     <label>OUTROS</label>
-
     <br>
+    <button  onclick="pegarGenero()">MOSTAR GENERO</button>
+
+    <br><br>
 
     <label>COMENTARIOS</label>
     <br>
